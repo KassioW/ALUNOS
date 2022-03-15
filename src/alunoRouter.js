@@ -30,7 +30,6 @@ router.get('/matricula/disc/:nome', async (req, res) => { // retonar media do al
     const data = await fs.readFile(global.fileName, 'utf-8');
     
     
-
 });
 router.post('/', async (req, res) => { //CRIAR NP
     try {
