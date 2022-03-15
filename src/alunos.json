@@ -1,22 +1,48 @@
 {
-    "nextId": 7,
-    "alunos": [
-        {
-            "nome": "aluno1",
-            "mat": "11",
-            "ano": 2022,
-            "turma": "3o mod",
-            "disciplinas": []
-        },
-        {
-            "nome": "info",
-            "n1": 10,
-            "n2": 10
-        },
-        {
-            "nome": "matematica",
-            "n1": 8,
-            "n2": 6
+            "nextId": 7,
+            "alunos": [
+                {
+                    "id": 1,
+                    "matricula": "211",
+                    "nome": "Kassio Oliveira",  
+                    "atividade": "api-node",
+                    "nota": 10
+                },
+                {
+                    "id": 2,
+                    "matricula": "212",
+                    "nome": "Darius silva",
+                    "atividade": "api-node",
+                    "nota": 9.5
+                },
+                {
+                    "id": 3,
+                    "matricula": "213",
+                    "nome": "Matheus",
+                    "atividade": "api-node",
+                    "nota": 10
+                },
+                {
+                    "id": 4,
+                    "matricula": "214",
+                    "nome": "Mybad",
+                    "atividade": "api-node",
+                    "nota": 8
+                },
+                {
+                    "id": 5,
+                    "matricula": "215",
+                    "nome": "Oloko",
+                    "atividade": "react-js",
+                    "nota": 9
+                },
+                {
+                    "id": 6,
+                    "matricula": "216",
+                    "nome": "Oloko",
+                    "atividade": "react-js",
+                    "nota": 9
+                }
+            ]
         }
-    ]
-}
+        

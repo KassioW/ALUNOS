@@ -28,7 +28,7 @@ router.get('/matricula/:numero', async (req, res) => { //retorna aluno por id
 router.get('/matricula/disc/:nome', async (req, res) => { // retonar media do aluno
     const matricula = req.params.numero;
     const data = await fs.readFile(global.fileName, 'utf-8');
-
+    
     
 
 });
