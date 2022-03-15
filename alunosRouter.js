@@ -14,6 +14,9 @@ router.get('/:id', (req, res) => { // retornar todos
     res.send(`exec method: ${req.method}`);
 });
 
+    router.get(
+    )
+
 router.post('/', async (req, res) => { // retornar todos
     let aluno = req.body;
 

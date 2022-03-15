@@ -1,1 +1,4 @@
-{"nextId":8,"alunos":[{"id":1,"matricula":"1001","nome":"Thiago Oliveira","atividade":"api-node","nota":10},{"id":2,"matricula":"1002","nome":"Erick Silva","atividade":"api-node","nota":9.5},{"id":3,"matricula":"1099","nome":"Nataliana Torres","atividade":"api-node","nota":10},{"id":4,"matricula":"1003","nome":"aaaa","atividade":"api-node","nota":8},{"id":6,"matricula":"1003","nome":"aaaa","atividade":"react-js","nota":9},{"id":7}]}
+{
+    "nextId": 1,
+    "alunos": []
+}
