@@ -5,16 +5,34 @@ const fs = require('fs').promises;
 const router = express.Router();
 router.use(express.json());
 
-router.get('/', (req, res) => {//recuperar todos
-    res.send('teste');
+router.get('/', (req, res) => {//RECUPERAR ALL
+    res.send('ok');
 });
 
 
-router.get('/:id', (req, res) => {//recuperar por id 
+router.get('/:id', (req, res) => {//RECUPERA POR ID
     res.send(`get ${req.params.id}`);
 });
 
-router.post('/', async (req, res) => { //criarnp
+router.get('/matricula/:numero', async (req, res) => { //retorna aluno por id
+    const matricula = req.params.numero;
+    const data = await fs.readFile(global.filename, 'utf-8');
+    const json = Json.parse(data);
+
+    const alunosList = json.alunos;
+    const alunos = alunosList.filter( a => a.matricula == matricula);
+
+        res.send(alunos);
+});
+
+router.get('/matricula/disc/:nome', async (req, res) => { // retonar media do aluno
+    const matricula = req.params.numero;
+    const data = await fs.readFile(global.fileName, 'utf-8');
+
+    
+
+});
+router.post('/', async (req, res) => { //CRIAR NP
     try {
         const content = await fs.readFile('./src/alunos.json', 'utf-8');
         const json = JSON.parse(content);
@@ -29,7 +47,7 @@ router.post('/', async (req, res) => { //criarnp
     }
 });
 
-router.put('/', (req, res) => {//atualizar 
+router.put('/matricula', (req, res) => {//atualizar matricula
     res.send('put');
 });
 

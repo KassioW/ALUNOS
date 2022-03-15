@@ -1,4 +1,22 @@
 {
-    "nextId": 1,
-    "alunos": []
+    "nextId": 7,
+    "alunos": [
+        {
+            "nome": "aluno1",
+            "mat": "11",
+            "ano": 2022,
+            "turma": "3o mod",
+            "disciplinas": []
+        },
+        {
+            "nome": "info",
+            "n1": 10,
+            "n2": 10
+        },
+        {
+            "nome": "matematica",
+            "n1": 8,
+            "n2": 6
+        }
+    ]
 }
